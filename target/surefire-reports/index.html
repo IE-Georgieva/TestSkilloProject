@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulLikedPost">successfulLikedPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.negative.NegativeTests" class="method navigator-link" hash-for-method="successfulPostedComment">successfulPostedComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.negative.NegativeTests" class="method navigator-link" hash-for-method="unsuccessfulDeletePost">unsuccessfulDeletePost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.negative.NegativeTests" class="method navigator-link" hash-for-method="unsuccessfulLogOut">unsuccessfulLogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulDeletePost">successfulDeletePost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulDislikedPost">successfulDislikedPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulLogOut">successfulLogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulPostedComment">successfulPostedComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulPrivatePost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)">successfulPrivatePost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulPublicPost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)">successfulPublicPost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.positive.SuccessfulTests" class="method navigator-link" hash-for-method="successfulRegistration">successfulRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.negative.NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulPostedComment">
+                  </a> <!-- successfulPostedComment -->
+                  <span class="method-name">successfulPostedComment</span>
+                  <div class="stack-trace">java.lang.AssertionError: Different message is displayed! expected [test] but found [test comment]
+	at object.Homepage.verifyThatCommentIsPostedSuccessful(Homepage.java:154)
+	at Tests.negative.NegativeTests.successfulPostedComment(NegativeTests.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unsuccessfulDeletePost">
+                  </a> <!-- unsuccessfulDeletePost -->
+                  <span class="method-name">unsuccessfulDeletePost</span>
+                  <div class="stack-trace">java.lang.AssertionError: Different message is displayed! expected [Post Deleted!23] but found [Post Deleted!]
+	at object.ProfilePage.verifyThatPostIsDeleted(ProfilePage.java:88)
+	at Tests.negative.NegativeTests.unsuccessfulDeletePost(NegativeTests.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unsuccessfulLogOut">
+                  </a> <!-- unsuccessfulLogOut -->
+                  <span class="method-name">unsuccessfulLogOut</span>
+                  <div class="stack-trace">java.lang.AssertionError: Different title is displayed! expected [true] but found [false]
+	at object.LogoutPage.verifyThatUserIsSuccessfulLogouted(LogoutPage.java:30)
+	at Tests.negative.NegativeTests.unsuccessfulLogOut(NegativeTests.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.positive.SuccessfulTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLikedPost">
+                  </a> <!-- successfulLikedPost -->
+                  <span class="method-name">successfulLikedPost</span>
+                  <div class="stack-trace">java.lang.AssertionError: Different message is displayed! expected [Post liked] but found [Post Deleted!]
+	at object.Homepage.verifyThatFirstPostIsLiked(Homepage.java:137)
+	at Tests.positive.SuccessfulTests.successfulLikedPost(SuccessfulTests.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.positive.SuccessfulTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulDeletePost">
+                  </a> <!-- successfulDeletePost -->
+                  <span class="method-name">successfulDeletePost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulDislikedPost">
+                  </a> <!-- successfulDislikedPost -->
+                  <span class="method-name">successfulDislikedPost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogOut">
+                  </a> <!-- successfulLogOut -->
+                  <span class="method-name">successfulLogOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulPostedComment">
+                  </a> <!-- successfulPostedComment -->
+                  <span class="method-name">successfulPostedComment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulPrivatePost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)">
+                  </a> <!-- successfulPrivatePost(src\test\resources\upload\I3E4FcV.jpeg, Test picture) -->
+                  <span class="method-name">successfulPrivatePost</span>
+                  <span class="parameters">(src\test\resources\upload\I3E4FcV.jpeg,Test picture)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulPublicPost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)">
+                  </a> <!-- successfulPublicPost(src\test\resources\upload\I3E4FcV.jpeg, Test picture) -->
+                  <span class="method-name">successfulPublicPost</span>
+                  <span class="parameters">(src\test\resources\upload\I3E4FcV.jpeg,Test picture)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulRegistration">
+                  </a> <!-- successfulRegistration -->
+                  <span class="method-name">successfulRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.negative.NegativeTests&quot;/&gt;
+      &lt;class name=&quot;Tests.positive.SuccessfulTests&quot;/&gt;
+      &lt;class name=&quot;Tests.TestObject&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">tests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulDeletePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulDislikedPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulLikedPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulLogOut</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulPostedComment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulPrivatePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulPublicPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulRegistration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unsuccessfulDeletePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unsuccessfulLogOut</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'successfulLikedPost')
+data.setCell(0, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(0, 3, 12642);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'unsuccessfulDeletePost')
+data.setCell(1, 2, 'Tests.negative.NegativeTests')
+data.setCell(1, 3, 8168);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'successfulDeletePost')
+data.setCell(2, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(2, 3, 7521);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'successfulPrivatePost')
+data.setCell(3, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(3, 3, 5989);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'successfulPostedComment')
+data.setCell(4, 2, 'Tests.negative.NegativeTests')
+data.setCell(4, 3, 5917);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'successfulPublicPost')
+data.setCell(5, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(5, 3, 5864);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'unsuccessfulLogOut')
+data.setCell(6, 2, 'Tests.negative.NegativeTests')
+data.setCell(6, 3, 5572);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'successfulPostedComment')
+data.setCell(7, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(7, 3, 5013);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'successfulDislikedPost')
+data.setCell(8, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(8, 3, 4968);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'successfulLogOut')
+data.setCell(9, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(9, 3, 3046);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'successfulRegistration')
+data.setCell(10, 2, 'Tests.positive.SuccessfulTests')
+data.setCell(10, 3, 2074);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.TestObject</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.positive.SuccessfulTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.negative.NegativeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupTestSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successfulPostedComment</span>
+                <span class="method-start">1153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulPostedComment status=FAILURE method=NegativeTests.successfulPostedComment...)</span>
+                <span class="method-start">7075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">7362 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">unsuccessfulDeletePost</span>
+                <span class="method-start">8055 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=unsuccessfulDeletePost status=FAILURE method=NegativeTests.unsuccessfulDeletePost()...)</span>
+                <span class="method-start">16224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">16509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">unsuccessfulLogOut</span>
+                <span class="method-start">17185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=unsuccessfulLogOut status=FAILURE method=NegativeTests.unsuccessfulLogOut()[pri:0, ...)</span>
+                <span class="method-start">22757 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.positive.SuccessfulTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">23018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulDeletePost</span>
+                <span class="method-start">23629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulDeletePost status=SUCCESS method=SuccessfulTests.successfulDeletePost()[p...)</span>
+                <span class="method-start">31151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">31282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulDislikedPost</span>
+                <span class="method-start">31964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulDislikedPost status=SUCCESS method=SuccessfulTests.successfulDislikedPost...)</span>
+                <span class="method-start">36932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">37080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successfulLikedPost</span>
+                <span class="method-start">37694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulLikedPost status=FAILURE method=SuccessfulTests.successfulLikedPost()[pri...)</span>
+                <span class="method-start">50337 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">50628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulLogOut</span>
+                <span class="method-start">51246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulLogOut status=SUCCESS method=SuccessfulTests.successfulLogOut()[pri:0, in...)</span>
+                <span class="method-start">54292 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">54395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulPostedComment</span>
+                <span class="method-start">54985 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulPostedComment status=SUCCESS method=SuccessfulTests.successfulPostedComme...)</span>
+                <span class="method-start">59999 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">60131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulPrivatePost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)</span>
+                <span class="method-start">60807 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulPrivatePost status=SUCCESS method=SuccessfulTests.successfulPrivatePost(j...)</span>
+                <span class="method-start">66796 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">66924 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulPublicPost(src\test\resources\upload\I3E4FcV.jpeg, Test picture)</span>
+                <span class="method-start">67534 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulPublicPost status=SUCCESS method=SuccessfulTests.successfulPublicPost(jav...)</span>
+                <span class="method-start">73399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">73527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulRegistration</span>
+                <span class="method-start">74203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest([TestResult name=successfulRegistration status=SUCCESS method=SuccessfulTests.successfulRegistration...)</span>
+                <span class="method-start">76277 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

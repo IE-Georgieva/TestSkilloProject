@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">76 149</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Tests.negative.NegativeTests</td><td><a href="#m0">successfulPostedComment</a></td><td rowspan="1">1718118442703</td><td rowspan="1">5917</td></tr><tr class="failedeven"><td><a href="#m1">unsuccessfulDeletePost</a></td><td rowspan="1">1718118449605</td><td rowspan="1">8168</td></tr><tr class="failedeven"><td><a href="#m2">unsuccessfulLogOut</a></td><td rowspan="1">1718118458735</td><td rowspan="1">5572</td></tr><tr class="failedodd"><td rowspan="1">Tests.positive.SuccessfulTests</td><td><a href="#m3">successfulLikedPost</a></td><td rowspan="1">1718118479244</td><td rowspan="1">12642</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">Tests.positive.SuccessfulTests</td><td><a href="#m4">successfulDeletePost</a></td><td rowspan="1">1718118465179</td><td rowspan="1">7521</td></tr><tr class="passedeven"><td><a href="#m5">successfulDislikedPost</a></td><td rowspan="1">1718118473514</td><td rowspan="1">4968</td></tr><tr class="passedeven"><td><a href="#m6">successfulLogOut</a></td><td rowspan="1">1718118492796</td><td rowspan="1">3046</td></tr><tr class="passedeven"><td><a href="#m7">successfulPostedComment</a></td><td rowspan="1">1718118496535</td><td rowspan="1">5013</td></tr><tr class="passedeven"><td><a href="#m8">successfulPrivatePost</a></td><td rowspan="1">1718118502357</td><td rowspan="1">5989</td></tr><tr class="passedeven"><td><a href="#m9">successfulPublicPost</a></td><td rowspan="1">1718118509084</td><td rowspan="1">5864</td></tr><tr class="passedeven"><td><a href="#m10">successfulRegistration</a></td><td rowspan="1">1718118515753</td><td rowspan="1">2074</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">Tests.negative.NegativeTests#successfulPostedComment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Different message is displayed! expected [test] but found [test comment]
+	at object.Homepage.verifyThatCommentIsPostedSuccessful(Homepage.java:154)
+	at Tests.negative.NegativeTests.successfulPostedComment(NegativeTests.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.negative.NegativeTests#unsuccessfulDeletePost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Different message is displayed! expected [Post Deleted!23] but found [Post Deleted!]
+	at object.ProfilePage.verifyThatPostIsDeleted(ProfilePage.java:88)
+	at Tests.negative.NegativeTests.unsuccessfulDeletePost(NegativeTests.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.negative.NegativeTests#unsuccessfulLogOut</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Different title is displayed! expected [true] but found [false]
+	at object.LogoutPage.verifyThatUserIsSuccessfulLogouted(LogoutPage.java:30)
+	at Tests.negative.NegativeTests.unsuccessfulLogOut(NegativeTests.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.positive.SuccessfulTests#successfulLikedPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Different message is displayed! expected [Post liked] but found [Post Deleted!]
+	at object.Homepage.verifyThatFirstPostIsLiked(Homepage.java:137)
+	at Tests.positive.SuccessfulTests.successfulLikedPost(SuccessfulTests.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.positive.SuccessfulTests#successfulDeletePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.positive.SuccessfulTests#successfulDislikedPost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.positive.SuccessfulTests#successfulLogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.positive.SuccessfulTests#successfulPostedComment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.positive.SuccessfulTests#successfulPrivatePost</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>src\test\resources\upload\I3E4FcV.jpeg</td><td>Test picture</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.positive.SuccessfulTests#successfulPublicPost</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>src\test\resources\upload\I3E4FcV.jpeg</td><td>Test picture</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.positive.SuccessfulTests#successfulRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

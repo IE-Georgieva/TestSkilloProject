@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Tests.negative.NegativeTests">
+        <methods>
+          <include name="setupTestSuite"/>
+          <include name="unsuccessfulLogOut"/>
+          <include name="unsuccessfulDeletePost"/>
+          <include name="successfulPostedComment"/>
+          <include name="tearDownTest"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.negative.NegativeTests -->
+      <class name="Tests.positive.SuccessfulTests">
+        <methods>
+          <include name="setupTestSuite"/>
+          <include name="successfulLikedPost"/>
+          <include name="tearDownTest"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.positive.SuccessfulTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

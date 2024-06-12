@@ -1,0 +1,8 @@
+object\Homepage.class
+object\Footer.class
+object\Search.class
+object\ProfilePage.class
+object\Header.class
+object\LoginPage.class
+object\NewPostPage.class
+object\LogoutPage.class

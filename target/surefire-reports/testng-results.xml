@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="7" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-11T18:07:21 EEST" name="Surefire suite" finished-at="2024-06-11T18:08:37 EEST" duration-ms="76149">
+    <groups>
+      <group name="tests">
+        <method signature="NegativeTests.successfulPostedComment()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" name="successfulPostedComment" class="Tests.negative.NegativeTests"/>
+        <method signature="NegativeTests.unsuccessfulDeletePost()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" name="unsuccessfulDeletePost" class="Tests.negative.NegativeTests"/>
+        <method signature="NegativeTests.unsuccessfulLogOut()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" name="unsuccessfulLogOut" class="Tests.negative.NegativeTests"/>
+        <method signature="SuccessfulTests.successfulDeletePost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulDeletePost" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulDislikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulDislikedPost" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulLikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulLikedPost" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulLogOut()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulLogOut" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulPostedComment()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulPostedComment" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulPrivatePost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulPrivatePost" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulPublicPost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulPublicPost" class="Tests.positive.SuccessfulTests"/>
+        <method signature="SuccessfulTests.successfulRegistration()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" name="successfulRegistration" class="Tests.positive.SuccessfulTests"/>
+      </group> <!-- tests -->
+    </groups>
+    <test started-at="2024-06-11T18:07:21 EEST" name="Surefire test" finished-at="2024-06-11T18:08:37 EEST" duration-ms="76149">
+      <class name="Tests.positive.SuccessfulTests">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:44 EEST" name="setupDriver" finished-at="2024-06-11T18:07:45 EEST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulDeletePost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:45 EEST" name="successfulDeletePost" finished-at="2024-06-11T18:07:52 EEST" duration-ms="7521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulDeletePost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:52 EEST" name="tearDownTest" finished-at="2024-06-11T18:07:52 EEST" duration-ms="130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulDeletePost status=SUCCESS method=SuccessfulTests.successfulDeletePost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:52 EEST" name="setupDriver" finished-at="2024-06-11T18:07:53 EEST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulDislikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:53 EEST" name="successfulDislikedPost" finished-at="2024-06-11T18:07:58 EEST" duration-ms="4968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulDislikedPost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:58 EEST" name="tearDownTest" finished-at="2024-06-11T18:07:58 EEST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulDislikedPost status=SUCCESS method=SuccessfulTests.successfulDislikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:58 EEST" name="setupDriver" finished-at="2024-06-11T18:07:59 EEST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulLikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:07:59 EEST" name="successfulLikedPost" finished-at="2024-06-11T18:08:11 EEST" duration-ms="12642" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Different message is displayed! expected [Post liked] but found [Post Deleted!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Different message is displayed! expected [Post liked] but found [Post Deleted!]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at object.Homepage.verifyThatFirstPostIsLiked(Homepage.java:137)
+at Tests.positive.SuccessfulTests.successfulLikedPost(SuccessfulTests.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLikedPost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:11 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:12 EEST" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulLikedPost status=FAILURE method=SuccessfulTests.successfulLikedPost()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:12 EEST" name="setupDriver" finished-at="2024-06-11T18:08:12 EEST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulLogOut()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:12 EEST" name="successfulLogOut" finished-at="2024-06-11T18:08:15 EEST" duration-ms="3046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogOut -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:15 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:15 EEST" duration-ms="103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulLogOut status=SUCCESS method=SuccessfulTests.successfulLogOut()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:15 EEST" name="setupDriver" finished-at="2024-06-11T18:08:16 EEST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulPostedComment()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:16 EEST" name="successfulPostedComment" finished-at="2024-06-11T18:08:21 EEST" duration-ms="5013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulPostedComment -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:21 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:21 EEST" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulPostedComment status=SUCCESS method=SuccessfulTests.successfulPostedComment()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:21 EEST" name="setupDriver" finished-at="2024-06-11T18:08:22 EEST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulPrivatePost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:22 EEST" name="successfulPrivatePost" data-provider="getPath" finished-at="2024-06-11T18:08:28 EEST" duration-ms="5989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src\test\resources\upload\I3E4FcV.jpeg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test picture]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulPrivatePost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:28 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:28 EEST" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulPrivatePost status=SUCCESS method=SuccessfulTests.successfulPrivatePost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:28 EEST" name="setupDriver" finished-at="2024-06-11T18:08:29 EEST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulPublicPost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:29 EEST" name="successfulPublicPost" data-provider="getPath" finished-at="2024-06-11T18:08:34 EEST" duration-ms="5864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src\test\resources\upload\I3E4FcV.jpeg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test picture]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulPublicPost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:34 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:35 EEST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulPublicPost status=SUCCESS method=SuccessfulTests.successfulPublicPost(java.io.File,java.lang.String)[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:35 EEST" name="setupDriver" finished-at="2024-06-11T18:08:35 EEST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulRegistration()[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:35 EEST" name="successfulRegistration" finished-at="2024-06-11T18:08:37 EEST" duration-ms="2074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulRegistration -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.positive.SuccessfulTests@957e06]" started-at="2024-06-11T18:08:37 EEST" name="tearDownTest" finished-at="2024-06-11T18:08:37 EEST" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulRegistration status=SUCCESS method=SuccessfulTests.successfulRegistration()[pri:0, instance:Tests.positive.SuccessfulTests@957e06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- Tests.positive.SuccessfulTests -->
+      <class name="Tests.negative.NegativeTests">
+        <test-method is-config="true" signature="setupTestSuite()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:21 EEST" name="setupTestSuite" finished-at="2024-06-11T18:07:21 EEST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestSuite -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:21 EEST" name="setupDriver" finished-at="2024-06-11T18:07:22 EEST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="successfulPostedComment()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:22 EEST" name="successfulPostedComment" finished-at="2024-06-11T18:07:28 EEST" duration-ms="5917" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Different message is displayed! expected [test] but found [test comment]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Different message is displayed! expected [test] but found [test comment]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at object.Homepage.verifyThatCommentIsPostedSuccessful(Homepage.java:154)
+at Tests.negative.NegativeTests.successfulPostedComment(NegativeTests.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulPostedComment -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:28 EEST" name="tearDownTest" finished-at="2024-06-11T18:07:28 EEST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulPostedComment status=FAILURE method=NegativeTests.successfulPostedComment()[pri:0, instance:Tests.negative.NegativeTests@316bcf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:28 EEST" name="setupDriver" finished-at="2024-06-11T18:07:29 EEST" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="unsuccessfulDeletePost()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:29 EEST" name="unsuccessfulDeletePost" finished-at="2024-06-11T18:07:37 EEST" duration-ms="8168" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Different message is displayed! expected [Post Deleted!23] but found [Post Deleted!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Different message is displayed! expected [Post Deleted!23] but found [Post Deleted!]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at object.ProfilePage.verifyThatPostIsDeleted(ProfilePage.java:88)
+at Tests.negative.NegativeTests.unsuccessfulDeletePost(NegativeTests.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsuccessfulDeletePost -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:37 EEST" name="tearDownTest" finished-at="2024-06-11T18:07:38 EEST" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unsuccessfulDeletePost status=FAILURE method=NegativeTests.unsuccessfulDeletePost()[pri:0, instance:Tests.negative.NegativeTests@316bcf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:38 EEST" name="setupDriver" finished-at="2024-06-11T18:07:38 EEST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="unsuccessfulLogOut()[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:38 EEST" name="unsuccessfulLogOut" finished-at="2024-06-11T18:07:44 EEST" duration-ms="5572" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Different title is displayed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Different title is displayed! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at object.LogoutPage.verifyThatUserIsSuccessfulLogouted(LogoutPage.java:30)
+at Tests.negative.NegativeTests.unsuccessfulLogOut(NegativeTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsuccessfulLogOut -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:Tests.negative.NegativeTests@316bcf94]" started-at="2024-06-11T18:07:44 EEST" name="tearDownTest" finished-at="2024-06-11T18:07:44 EEST" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unsuccessfulLogOut status=FAILURE method=NegativeTests.unsuccessfulLogOut()[pri:0, instance:Tests.negative.NegativeTests@316bcf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- Tests.negative.NegativeTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

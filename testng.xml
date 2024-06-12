@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ego/Desktop/TestSkilloProject">
+        <classes>
+            <class name="Tests.negative.NegativeTests">
+                <methods>
+                    <include name="unsuccessfulLogOut"/>
+                    <include name="unsuccessfulDeletePost"/>
+                </methods>
+            </class>
+            <class name="Tests.positive.SuccessfulTests">
+                <methods>
+                    <include name="successfulRegistration"/>
+                    <include name="successfulPrivatePost"/>
+                    <include name="successfulPublicPost"/>
+                    <include name="successfulDeletePost"/>
+                    <include name="successfulDislikedPost"/>
+                    <include name="successfulLikedPost"/>
+                    <include name="successfulPostedComment"/>
+                    <include name="successfulLogOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
