@@ -25,22 +25,17 @@ public class TestObject {
     protected ProfilePage profilePage;
     protected NewPostPage newPostPage;
     protected LogoutPage logoutPage;
-
     public static final String SCREENSHOTS_DIR = ("src\\test\\resources\\screenshots\\");
     protected WebDriver webDriver;
-
 
     @BeforeSuite
     protected final void setupTestSuite() throws IOException {
         cleanDirectory(SCREENSHOTS_DIR);
         WebDriverManager.chromedriver().setup();
-
-
     }
 
     @BeforeMethod()
     protected final void setupDriver() {
-
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -57,7 +52,6 @@ public class TestObject {
         takeScreenshot(testResult);
         quitDriver();
     }
-
 
     private void quitDriver() {
         if (this.webDriver != null) {
@@ -80,11 +74,11 @@ public class TestObject {
         } catch (IOException exception) {
             System.out.printf("Unable to delete the files in Directory: %s%n", directoryPath);
         }
-
     }
 
     private void takeScreenshot(ITestResult testResult) {
         if (ITestResult.FAILURE == testResult.getStatus()) {
+
             try {
                 TakesScreenshot takesScreenshot = (TakesScreenshot) webDriver;
                 String testName = testResult.getName();

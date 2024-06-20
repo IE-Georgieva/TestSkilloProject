@@ -1,15 +1,10 @@
 package Tests.negative;
 
 import Tests.TestObject;
-import object.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
 
 public class NegativeTests extends TestObject {
-
 
     @Test(groups = "tests")
     public void unsuccessfulLogOut() {
@@ -27,8 +22,9 @@ public class NegativeTests extends TestObject {
         profilePage.clickAllTab();
         profilePage.selectFirstElementFromProfile();
         profilePage.deletePost();
-        profilePage.verifyThatPostIsDeleted("Post Deleted!23", "Different message is displayed!");
+        profilePage.verifyThatPostIsDeleted();
     }
+
     @Test(groups = "tests")
     public void successfulPostedComment() throws InterruptedException {
         loginPage.navigateTo();

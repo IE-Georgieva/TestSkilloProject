@@ -9,9 +9,8 @@ import org.testng.Assert;
 import java.io.File;
 
 
-public class NewPostPage extends BasePage {
+public class NewPostPage extends BaseComponent {
     public static final String NEWPOST_URL = "http://training.skillo-bg.com:4200/posts/create";
-
 
     @FindBy(css = "input.form-control.input-lg")
     private WebElement uploadPictureText;
@@ -27,12 +26,11 @@ public class NewPostPage extends BasePage {
     public NewPostPage(WebDriver webDriver) {
         super(webDriver);
     }
-
+    private Header header = super.header;
 
     public void navigateTo() {
         this.webDriver.get(NEWPOST_URL);
     }
-
 
     public void uploadPicture(File file) {
 
@@ -64,12 +62,6 @@ public class NewPostPage extends BasePage {
         toggle.click();
     }
 
-    /**
-     * Method which checks that public post is created successfully
-     *
-     * @param expectedPublicPostText - Expected message which should be displayed after public post is created
-     * @param messageOnFailure       - Message which is displayed when test fail
-     */
     public void verifyPublicPostIsSuccessful(String expectedPublicPostText, String messageOnFailure) {
         performWait();
         try {
@@ -82,12 +74,6 @@ public class NewPostPage extends BasePage {
         }
     }
 
-    /**
-     * Method which checks that private post is created successfully
-     *
-     * @param expectedPrivatePostText - Expected message which should be displayed after private post is created
-     * @param messageOnFailure        - Message which is displayed when test fail
-     */
     public void verifyPrivatePostIsSuccessful(String expectedPrivatePostText, String messageOnFailure) {
         performWait();
         try {
@@ -99,6 +85,4 @@ public class NewPostPage extends BasePage {
 
         }
     }
-
-
 }

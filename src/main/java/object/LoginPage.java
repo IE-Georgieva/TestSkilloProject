@@ -1,16 +1,13 @@
 package object;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-
-public class LoginPage extends BasePage {
+public class LoginPage extends BaseComponent {
     public static final String PAGE_URL = "http://training.skillo-bg.com:4200/users/login";
-
 
     @FindBy(css = "[name=username]")
     private WebElement usernameTextFieldRegisterForm;
@@ -31,12 +28,11 @@ public class LoginPage extends BasePage {
     @FindBy(id = "defaultLoginFormPassword")
     private WebElement passwordTextFieldSignInForm;
 
-    WebDriver driver;
-
     public LoginPage(WebDriver webDriver) {
         super(webDriver);
     }
 
+    private Header header = super.header;
 
     public boolean isLoaded() {
         performWait();
@@ -44,21 +40,10 @@ public class LoginPage extends BasePage {
 
     }
 
-
-    /**
-     * Navigate to Login page
-     */
     public void navigateTo() {
         this.webDriver.get(PAGE_URL);
     }
 
-
-    /**
-     * Method which populates username and password and clicks on "Sign in" button
-     *
-     * @param username - Text field for username
-     * @param password - Text field for password
-     */
     public void populateRegistrationForm(String username, String email, String password, String confirmPassword) {
         performWait();
         webDriverWait.until(ExpectedConditions.visibilityOf(usernameTextFieldRegisterForm));
@@ -73,12 +58,6 @@ public class LoginPage extends BasePage {
 
     }
 
-    /**
-     * Method which populates Login form
-     *
-     * @param username - Text field for username
-     * @param password - Text field for password
-     */
     public void populateLoginForm(String username, String password) {
         performWait();
         webDriverWait.until(ExpectedConditions.visibilityOf(usernameTextFieldSignInForm));
@@ -89,9 +68,6 @@ public class LoginPage extends BasePage {
 
     }
 
-    /**
-     * Method which checks that registration is successful
-     */
     public void verifyRegistrationIsSuccessful() {
         performWait();
         String expectedUrl = "http://training.skillo-bg.com:4200/posts/all";
@@ -99,14 +75,8 @@ public class LoginPage extends BasePage {
         Assert.assertEquals(actualUrl, expectedUrl, "Incorrect link is displayed!");
     }
 
-
-    /**
-     * Method which clicks on register button
-     */
     public void clickRegisterButton() {
         performWait();
         registerButton.click();
     }
-
-
 }

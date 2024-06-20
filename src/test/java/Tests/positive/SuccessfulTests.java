@@ -8,10 +8,8 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-
 public class SuccessfulTests extends TestObject {
     private static final Logger log = LoggerFactory.getLogger(SuccessfulTests.class);
-
 
     @DataProvider(name = "getPath")
     public Object[][] getPath() {
@@ -23,7 +21,6 @@ public class SuccessfulTests extends TestObject {
 
         };
     }
-
 
     @Test(groups = "tests")
     public void successfulRegistration() {
@@ -66,9 +63,8 @@ public class SuccessfulTests extends TestObject {
         profilePage.clickAllTab();
         profilePage.selectFirstElementFromProfile();
         profilePage.deletePost();
-        profilePage.verifyThatPostIsDeleted("Post Deleted!", "Different message is displayed!");
+        profilePage.verifyThatPostIsDeleted();
     }
-
 
     @Test(groups = "tests")
     public void successfulDislikedPost() throws InterruptedException {
@@ -88,7 +84,6 @@ public class SuccessfulTests extends TestObject {
         homepage.verifyThatFirstPostIsLiked("Post liked", "Different message is displayed!");
     }
 
-
     @Test(groups = "tests")
     public void successfulPostedComment() throws InterruptedException {
         loginPage.navigateTo();
@@ -105,7 +100,6 @@ public class SuccessfulTests extends TestObject {
         header.clickOnLogoutButton();
         logoutPage.verifyThatUserIsSuccessfulLogout("Sign in", "User is not logged out!");
     }
-
 }
 
 

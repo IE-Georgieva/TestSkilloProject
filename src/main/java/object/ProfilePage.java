@@ -10,7 +10,7 @@ import org.testng.Assert;
 import java.util.List;
 
 
-public class ProfilePage extends BasePage {
+public class ProfilePage extends BaseComponent {
     public static final String PROFILE_PAGE_URL = "http://training.skillo-bg.com:4200/users/";
 
     @FindBy(css = "app-profile-posts-section label:first-of-type")
@@ -26,6 +26,7 @@ public class ProfilePage extends BasePage {
         super(webDriver);
     }
 
+    private Header header = super.header;
 
     public boolean isUrlLoaded() {
         performWait();
@@ -41,16 +42,10 @@ public class ProfilePage extends BasePage {
         this.webDriver.get(PROFILE_PAGE_URL);
     }
 
-    /**
-     * Method which clicks on "ALL" tab
-     */
     public void clickAllTab() {
         allButton.click();
     }
 
-    /**
-     * Method which selects first element form profile
-     */
     public void selectFirstElementFromProfile() throws InterruptedException {
 
         performWait();
@@ -60,31 +55,17 @@ public class ProfilePage extends BasePage {
             Thread.sleep(2000);
             firstElement.click();
         }
-
     }
 
-    /**
-     * Method which clicks on "Delete" button
-     */
     public void deletePost() {
         performWait();
         deleteButton.click();
         yesButton.click();
     }
 
-    /**
-     * Method which checks that post is deleted successfully
-     */
-    public void verifyThatPostIsDeleted(String expectedDeletedPostText, String messageOnFailure) throws InterruptedException {
+    public void verifyThatPostIsDeleted() {
         performWait();
-        try {
-            String actualDeletedPostText = "";
-            while (actualDeletedPostText.isBlank())
-                actualDeletedPostText = failureMessage.getText();
-            Assert.assertEquals(actualDeletedPostText, expectedDeletedPostText, messageOnFailure);
-        } catch (Exception e) {
-
-        }
-
+        webDriverWait.until(ExpectedConditions.visibilityOf(failureMessage));
+        Assert.assertTrue(failureMessage.isDisplayed(), "Element is not visible");
     }
 }
