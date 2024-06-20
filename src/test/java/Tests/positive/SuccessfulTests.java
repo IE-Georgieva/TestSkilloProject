@@ -18,7 +18,6 @@ public class SuccessfulTests extends TestObject {
         return new Object[][]{
 
                 {postPicture, caption},
-
         };
     }
 
